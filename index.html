@@ -29,7 +29,7 @@
             <img src="images/Rectangle 91.png" alt="main building" />
           </div>
           <h1>რატომ ვიყენებთ მას და საიდან მოდის ეს ტექსტი?</h1>
-          <div class="image-container">
+          <div class="image-container container">
             <img src="images/Rectangle 92.png" alt="" />
             <img src="images/Rectangle 93.png" alt="" />
             <img src="images/Rectangle 94.png" alt="" />
@@ -39,7 +39,7 @@
         </div>
       </section>
       <section>
-        <div class="container">
+        <div class="information-container container">
           <p>
             ცნობილი ფაქტია, რომ გვერდის წაკითხვად შიგთავსს შეუძლია მკითხველის
             ყურადღება მიიზიდოს და დიზაინის აღქმაში ხელი შეუშალოს. Lorem Ipsum-ის
@@ -83,53 +83,59 @@
     <footer>
       <div class="container">
         <div class="footer-container">
-          <div>
-            <h2>კონტაქტი</h2>
-            <p>
-              Lorem Ipsum საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.
-              იგი სტანდარტად 1500-იანი წლებიდან იქცა, როდესაც უცნობმა მბეჭდავმა
-              ამწყობ დაზგაზე წიგნის საცდელი ეგზემპლარი დაბეჭდა.
-            </p>
-            <a
-              href="https://www.google.com/maps?q=Tbilisi,+Georgia"
-              target="_blank"
-            ></a>
-          </div>
-          <div class="contact-container">
-            <div class="phone-num">
-              <img src="images/Group 77.png" alt="" />
-              <a href="tel:+995555444333"> +995 555 444 333</a>
+          <div class="footer-text-container">
+            <div class="map-text">
+              <h2>კონტაქტი</h2>
+              <p>
+                Lorem Ipsum საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო
+                ტექსტია. იგი სტანდარტად 1500-იანი წლებიდან იქცა, როდესაც უცნობმა
+                მბეჭდავმა ამწყობ დაზგაზე წიგნის საცდელი ეგზემპლარი დაბეჭდა.
+              </p>
+              <div class="map">
+                <iframe
+                  src="https://www.google.com/maps?q=Tbilisi,+Georgia&output=embed"
+                >
+                </iframe>
+              </div>
             </div>
-            <div class="mail-container">
-              <img src="images/Group 78.png" alt="" />
-              <a href="mailto:example@gmail.com">example@gmail.com</a>
+            <div class="contact-container">
+              <div class="phone-num">
+                <img src="images/Group 77.png" alt="" />
+                <a href="tel:+995555444333"> +995 555 444 333</a>
+              </div>
+              <div class="mail-container">
+                <img src="images/Group 78.png" alt="" />
+                <a href="mailto:example@gmail.com">example@gmail.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="form-container">
+            <form action="#" method="#">
+              <div class="user-iteration">
+                <label for="name-surname">სახელი, გვარი</label>
+                <input type="text" name="name-surname" id="name-surname" />
+              </div>
+              <div class="user-iteration">
+                <label for="user-email">ელ.ფოსტა</label>
+                <input type="email" name="Email" id="user-email" />
+              </div>
+              <div class="user-iteration">
+                <label for="user-number">ტელეფონის ნომერი</label>
+                <input type="number" name="mobileNum" id="user-number" />
+              </div>
+              <div class="user-iteration">
+                <label for="user-message">შეტყობინება</label>
+                <textarea name="userMessage" id="user-message"></textarea>
+              </div>
+            </form>
+            <div class="last-button">
+              <button>გაგზავნა</button>
             </div>
           </div>
         </div>
-        <div class="form-container">
-          <form action="#" method="#">
-            <div class="user-iteration">
-              <label for="name-surname">სახელი, გვარი</label>
-              <input type="text" name="name-surname" id="name-surname" />
-            </div>
-            <div class="user-iteration">
-              <label for="user-email">ელ.ფოსტა</label>
-              <input type="email" name="Email" id="user-email" />
-            </div>
-            <div class="user-iteration">
-              <label for="user-number">ტელეფონის ნომერი</label>
-              <input type="number" name="mobileNum" id="user-number" />
-            </div>
-            <div class="user-iteration">
-              <label for="user-message">შეტყობინება</label>
-              <textarea name="userMessage" id="user-message"></textarea>
-            </div>
-          </form>
-          <button>გაგზავნა</button>
-        </div>
-        <div>
+        <div class="rights-container">
           <h4>ყველა უფლება დაცულია</h4>
-          <div>
+          <div class="smartweb-container">
             <h6>დამზადებულია</h6>
             <img src="images/Group 73.svg" alt="heart" />
             <h6>-ით</h6>
@@ -138,6 +144,8 @@
         </div>
       </div>
     </footer>
-    <img src="images/Group 126.svg" alt="burger" />
+    <div class="burger-icon">
+      <img src="images/Group 126.svg" alt="burger" />
+    </div>
   </body>
 </html>
