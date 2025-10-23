@@ -30,6 +30,10 @@ button {
   border-radius: 28px;
   border: none;
 }
+button:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
 header {
   background-color: #0a22f4;
   height: 380px;
@@ -61,6 +65,9 @@ li a {
   font-size: 16px;
   font-weight: 300;
 }
+li a:hover {
+  text-decoration: underline;
+}
 ul button {
   color: #171717;
   padding: 18px 36px;
@@ -86,7 +93,7 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
   gap: 25px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 .information-container {
   display: flex;
@@ -116,15 +123,13 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 100px;
 }
 h2 {
   color: #ffffff;
   font-weight: 700;
   margin-bottom: 30px;
 }
-
-.footer-text-container p {
+.map-text p {
   color: #ffffff;
   font-weight: 300;
   font-size: 16px;
@@ -160,7 +165,9 @@ h2 {
 .mail-container {
   display: flex;
   align-items: center;
-  margin-right: 100px;
+}
+.phone-num {
+  margin-right: 70px;
 }
 .phone-num a,
 .mail-container a {
@@ -229,6 +236,139 @@ h6 {
 .burger-icon {
   position: fixed;
   bottom: 10px;
-  right: 50%;
+  right: 43%;
   display: none;
+}
+@media (max-width: 1270px) {
+  .header-container nav ul {
+    gap: 20px;
+    font-size: 10px;
+  }
+  .container {
+    width: 90%;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .footer-container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 769px) {
+  header {
+    height: 30vh;
+    border-radius: 0 0 20px 20px;
+  }
+  .header-container {
+    position: static;
+    padding-top: 50px;
+    transform: unset;
+    background-color: transparent;
+  }
+  .header-container nav,
+  .footer-text-container p {
+    display: none;
+  }
+  .header-container img {
+    width: 33vw;
+  }
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .image-container img:last-child {
+    display: none;
+  }
+  .image-container img {
+    width: 45vw;
+    height: 20vh;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  .information-container p:nth-of-type(2),
+  .information-container p:nth-of-type(3) {
+    display: none;
+  }
+  .footer-container {
+    flex-direction: column-reverse;
+  }
+  .footer-container .last-button {
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  .footer-container .last-button button {
+    padding: 20px 20vw;
+  }
+  .footer-text-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .map {
+    box-shadow: none;
+    width: 100%;
+  }
+  .contact-container {
+    max-width: 463px;
+    font-size: 13px;
+  }
+  .contact-container img {
+    padding: 0;
+    margin-right: 12px;
+  }
+  .contact-container .phone-num,
+  .contact-container .mail-container {
+    margin-right: 0;
+  }
+  .rights-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    margin-bottom: 130px;
+  }
+  .smartweb-container {
+    margin-bottom: 40px;
+  }
+  h4 {
+    font-size: 13px;
+    opacity: 60%;
+  }
+  h6 {
+    font-size: 13px;
+  }
+  .burger-icon {
+    display: block;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 770px) {
+  header {
+    height: 50vh;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 425px) {
+  header {
+    height: 35vh;
+  }
+}
+
+@media (max-width: 375px) {
+  .image-container img {
+    height: 15vh;
+  }
+  .smartweb-container,
+  .contact-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
 }
